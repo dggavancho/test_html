@@ -1,4 +1,4 @@
-console.log("hello world");
+
 
 // Function to draw Inicio de ciclo
 function draw_inicio_ciclo(canvas,ctx,x, y, size_x,size_y, radius, color) {
@@ -191,4 +191,7 @@ function crea_canvas(div_id){
     crea_graf(sem_por[0],sem_por[1], Math.round(sem_por[1]/sem_por[0]*100),canvas_tag.id)
 }
 
-crea_canvas("barra_de_progreso_por_semana")
+
+window.setTimeout(function(){
+    crea_canvas("barra_de_progreso_por_semana");
+},5000);
